@@ -1,12 +1,12 @@
-# odin-restaurant-page
-## Odin - Project {nr}: {title}
+# odin-memory
+## Odin - Project 15: Memory
 
-{info}
+Memory Game made with React to practice State and Effects.
 
 ## General Info
-Date: {date}
+Date: 10.09.2025
 
-Hours Working per Day: {hw}
+Hours Working per Day: 1
 
 Finish: {date}
 
@@ -23,4 +23,4 @@ Javascript Course: ✅ Complete
 
 Advanced HTML and CSS: ✅ Complete
 
-React: {p%}
+React: 42%
