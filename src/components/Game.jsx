@@ -35,8 +35,19 @@ export default function Game() {
         <>
             <div className="game">
                 <div className="score">
-                    <p>Score: {score}</p>
-                    <p>High Score: {highScore}</p>
+                    
+                    <div className="score-section">
+                        <p className="label">SCORE</p>
+                        <div className="score-score">
+                            <p className="score-real">{score}</p>
+                        </div>
+                    </div>
+                    <div className="score-section">
+                        <p className="label">HIGH SCORE</p>
+                        <div className="score-score">
+                            <p className="score-real">{highScore}</p>
+                        </div>
+                    </div>
                 </div>
                 <Board onGameOver={onGameOver} updateScore={updateScore} images={images} />
             </div>
