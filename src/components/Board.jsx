@@ -19,7 +19,7 @@ export default function Board( { images, onGameOver, updateScore } ) {
 
     return (
         <>
-            <div>{cards}</div>
+            <div className="board">{cards}</div>
         </>
     );
 }

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Board from "./Board";
 import loadPokemonImages from "../hooks/loadPokemonImages.js";
 
+const IMAGE_COUNT = 10;
+
 export default function Game() {
     const [score, setScore] = useState(0);
     const [highScore, setHighScore] = useState(0);
@@ -21,7 +23,7 @@ export default function Game() {
     useEffect(() => {
         async function load() {
             // load images when initialising
-            const pokemonImages = await loadPokemonImages(5);
+            const pokemonImages = await loadPokemonImages(IMAGE_COUNT);
 
             setImages(pokemonImages);
         }

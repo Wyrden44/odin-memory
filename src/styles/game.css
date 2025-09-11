@@ -1,0 +1,22 @@
+.board {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #8d8d8d;
+    box-shadow: 2px 2px #ccc, 4px 4px black, 10px 10px 10px -5px black;
+}
+
+.card > img {
+    width: 200px;
+    height: 200px;
+    
+}

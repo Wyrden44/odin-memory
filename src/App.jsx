@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './styles/App.css'
+import "./styles/game.css"
 import Game from './components/Game'
 
 function App() {
