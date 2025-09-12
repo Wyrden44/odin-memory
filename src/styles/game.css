@@ -89,3 +89,21 @@
     color: #4e5ac5;
     cursor: pointer;
 }
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 7px solid white;
+    border-radius: 50%;
+    border-bottom-color: #2f6ee2;
+    animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
