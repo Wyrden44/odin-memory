@@ -54,3 +54,38 @@
     justify-content: center;
     align-items: center;
 }
+
+.difficulty-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-difficulty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    border: 2px solid white;
+    padding: 20px;
+
+    width: 350px;
+}
+
+.difficulty {
+    position: relative;
+
+    background: transparent;
+    border: none;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.difficulty:hover {
+    color: #4e5ac5;
+    cursor: pointer;
+}
