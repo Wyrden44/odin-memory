@@ -1,16 +1,18 @@
 # odin-memory
 ## Odin - Project 15: Memory
 
+## Live Demo: https://prismatic-pothos-39530b.netlify.app/
+
 Memory Game made with React to practice State and Effects.
 
 ## General Info
 Date: 10.09.2025
 
-Hours Working per Day: 1
+Hours Working per Day: 2
 
-Finish: {date}
+Finish: 13.09.2025
 
-Hours Worked: {hw}
+Hours Worked: 5
 
 ## Progress
 ### Progress on Foundations Course: 
