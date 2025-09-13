@@ -16,8 +16,12 @@ export default function Game({ difficulty }) {
         }
     }
 
-    function onGameOver() {
+    function onGameOver(won) {
         setScore(0);
+
+        if (won) {
+            
+        }
     }
 
     useEffect(() => {
@@ -36,10 +40,10 @@ export default function Game({ difficulty }) {
             const pokemonImages = await loadPokemonImages(IMAGE_COUNT);
 
             setImages(pokemonImages);
+            setSpinner(false);
         }
 
         load();
-        setSpinner(false);
     }, [])
 
     if (spinner) {
