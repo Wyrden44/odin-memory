@@ -149,3 +149,43 @@
         transform: rotate(360deg);
     }
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #2f6ee2;
+
+    transition: transform 0.4s ease-in;
+}
+
+.modal.show {
+    display: block;
+    transform: translateX(-50%) translateY(20%);
+}
+
+.modal button {
+    padding: 7px 17px;
+    margin: 0 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    
+    background-color: white;
+    color: black;
+
+    transition: border-color 0.3s;
+}
+
+.modal button:hover {
+    border-color: #061f4e;
+    cursor: pointer;
+}

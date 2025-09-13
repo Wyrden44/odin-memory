@@ -24,6 +24,10 @@ function App() {
     }
     setScreen(1);
   }
+
+  function returnToMenu() {
+    setScreen(0);
+  }
   
   if (screen == 0) {
     return (
@@ -35,7 +39,7 @@ function App() {
   else {
     return (
       <>
-        <Game difficulty={difficulty}/>
+        <Game difficulty={difficulty} returnToMenu={returnToMenu} />
       </>
     )
   }

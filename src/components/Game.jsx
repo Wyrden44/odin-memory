@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import Board from "./Board";
 import loadPokemonImages from "../hooks/loadPokemonImages.js";
 import Spinner from "./Spinner.jsx";
+import GameOverModal from "./GameOverModal.jsx";
 
-export default function Game({ difficulty }) {
+export default function Game({ difficulty, returnToMenu }) {
     const [score, setScore] = useState(0);
     const [highScore, setHighScore] = useState(0);
     const [images, setImages] = useState([]);
     const [spinner, setSpinner] = useState(true);
+    const [showModal, setShowModal] = useState(false);
 
     function updateScore(newScore) {
         setScore(newScore);
@@ -20,7 +22,7 @@ export default function Game({ difficulty }) {
         setScore(0);
 
         if (won) {
-            
+            setShowModal(true);
         }
     }
 
@@ -74,6 +76,8 @@ export default function Game({ difficulty }) {
                     </div>
                     <Board onGameOver={onGameOver} updateScore={updateScore} images={images} />
                 </div>
+
+                <GameOverModal show={showModal} onRestartClick={() => setShowModal(false)} onMainMenuClick={() => {setShowModal(false);returnToMenu();}} />
             </>
         );
     }

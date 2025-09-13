@@ -24,14 +24,14 @@ export default function Board( { images, onGameOver, updateScore } ) {
             setSeen([]);
             onGameOver(false);
         }
+        // game over -win
+        else if (seen.length+1 === images.length) {
+            onGameOver(true);
+            setSeen([]);
+        }
         else {
             setSeen([...seen, id]);
             updateScore(seen.length+1);
-
-            // game over -win
-            if (seen.length+1 === images.length) {
-                onGameOver(true);
-            }
         }
     }
 
