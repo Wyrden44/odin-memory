@@ -1,7 +1,7 @@
 # odin-memory
 ## Odin - Project 15: Memory
 
-## Live Demo: https://prismatic-pothos-39530b.netlify.app/
+Live Demo: https://prismatic-pothos-39530b.netlify.app/
 
 Memory Game made with React to practice State and Effects.
 
